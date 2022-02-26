@@ -1,0 +1,40 @@
+{
+  "name": "aggregate-playwright-reporter",
+  "version": "0.1.0",
+  "description": "Aggregates Playwright test results",
+  "homepage": "https://github.com/anooprav7/aggregate-playwright-reporter#readme",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "yarn run clean && yarn compile",
+    "compile": "tsc",
+    "clean": "rimraf ./dist",
+    "test": "yarn build && playwright test -c tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anooprav7/aggregate-playwright-reporter.git"
+  },
+  "keywords": [
+    "playwright",
+    "reporter"
+  ],
+  "author": {
+    "name": "Anoop Raveendran"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=12"
+  },
+  "bugs": {
+    "url": "https://github.com/anooprav7/aggregate-playwright-reporter/issues"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.19.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.5"
+  },
+  "files": [
+    "dist"
+  ]
+}
